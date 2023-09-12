@@ -26,6 +26,7 @@
 		E9E91B7C2AB0ACCE00E4A6E4 /* CreateThreadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E91B7B2AB0ACCE00E4A6E4 /* CreateThreadView.swift */; };
 		E9E91B822AB0AD2400E4A6E4 /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E91B812AB0AD2400E4A6E4 /* ActivityView.swift */; };
 		E9E91B882AB0AD7500E4A6E4 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E91B872AB0AD7500E4A6E4 /* ProfileView.swift */; };
+		E9E91B8A2AB0B20600E4A6E4 /* ThreadCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E91B892AB0B20600E4A6E4 /* ThreadCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		E9E91B7B2AB0ACCE00E4A6E4 /* CreateThreadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateThreadView.swift; sourceTree = "<group>"; };
 		E9E91B812AB0AD2400E4A6E4 /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
 		E9E91B872AB0AD7500E4A6E4 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		E9E91B892AB0B20600E4A6E4 /* ThreadCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -287,6 +289,7 @@
 			isa = PBXGroup;
 			children = (
 				E9E91B6F2AB0AB8700E4A6E4 /* FeedView.swift */,
+				E9E91B892AB0B20600E4A6E4 /* ThreadCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -505,6 +508,7 @@
 				E9E91B602AB08CFC00E4A6E4 /* RegisterationViewModel.swift in Sources */,
 				E9E91B532AB0801A00E4A6E4 /* AuthButton.swift in Sources */,
 				E9E91B5E2AB08CF400E4A6E4 /* RegisterationModel.swift in Sources */,
+				E9E91B8A2AB0B20600E4A6E4 /* ThreadCell.swift in Sources */,
 				E9E91B882AB0AD7500E4A6E4 /* ProfileView.swift in Sources */,
 				E9E91B622AB08EDE00E4A6E4 /* TextFieldModifier.swift in Sources */,
 				E9E91B672AB0929C00E4A6E4 /* View.swift in Sources */,
