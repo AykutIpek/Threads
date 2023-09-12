@@ -25,13 +25,7 @@ struct FeedView: View {
             
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
-                    Button {
-                        
-                    } label: {
-                        Image(systemName: "arrow.counterclockwise")
-                            .foregroundColor(Color.primary)
-                    }
-
+                    toolbarTrailingItem
                 }
             }
         }
@@ -42,6 +36,17 @@ struct FeedView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationStack {
             FeedView()
+        }
+    }
+}
+
+private extension FeedView {
+    var toolbarTrailingItem: some View {
+        Button {
+            
+        } label: {
+            Image(systemName: "arrow.counterclockwise")
+                .foregroundColor(Color.primary)
         }
     }
 }

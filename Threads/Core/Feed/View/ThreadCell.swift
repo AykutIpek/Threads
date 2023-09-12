@@ -11,58 +11,22 @@ struct ThreadCell: View {
     var body: some View {
         VStack {
             HStack(alignment: .top, spacing: 12) {
-                Image("Max-Verstappen")
-                    .resizable()
-                    .scaledToFill()
-                    .frame(width: 40, height: 40)
-                    .clipShape(Circle())
-                
+                personImage
                 VStack(alignment: .leading, spacing: 4) {
                     HStack {
-                        Text("maxverstappen1")
-                            .font(.footnote)
-                            .fontWeight(.semibold)
+                        
+                        userNameText
+                        
                         Spacer()
                         
-                        Text("10m")
-                            .font(.caption)
-                            .foregroundColor(Color(.systemGray3))
+                        timeText
                         
-                        Button {
-                            
-                        } label: {
-                            Image(systemName: "ellipsis")
-                                .foregroundColor(Color(.darkGray))
-                        }
+                        optionsButton
                     }
-                    Text("Formula 1 Champion")
-                        .font(.footnote)
-                        .multilineTextAlignment(.leading)
                     
-                    HStack(spacing: 16) {
-                        Button {
-                            
-                        } label: {
-                            Image(systemName: "heart")
-                        }
-                        Button {
-                            
-                        } label: {
-                            Image(systemName: "bubble.right")
-                        }
-                        Button {
-                            
-                        } label: {
-                            Image(systemName: "arrow.rectanglepath")
-                        }
-                        Button {
-                            
-                        } label: {
-                            Image(systemName: "paperplane")
-                        }
-                    }
-                    .foregroundColor(.black)
-                    .padding(.vertical, 8)
+                    bodyText
+                    
+                    cellButtonsGroup
                 }
             }
             Divider()
@@ -74,5 +38,88 @@ struct ThreadCell: View {
 struct ThreadCell_Previews: PreviewProvider {
     static var previews: some View {
         ThreadCell()
+    }
+}
+
+private extension ThreadCell {
+    var personImage: some View {
+        Image("Max-Verstappen")
+            .resizable()
+            .scaledToFill()
+            .frame(width: 40, height: 40)
+            .clipShape(Circle())
+    }
+    
+    var userNameText: some View {
+        Text("maxverstappen1")
+            .font(.footnote)
+            .fontWeight(.semibold)
+    }
+    
+    var timeText: some View {
+        Text("10m")
+            .font(.caption)
+            .foregroundColor(Color(.systemGray3))
+    }
+    
+    var bodyText: some View {
+        Text("Formula 1 Champion")
+            .font(.footnote)
+            .multilineTextAlignment(.leading)
+    }
+}
+
+//MARK: - Buttons and Buttons Group
+private extension ThreadCell {
+    var cellButtonsGroup: some View {
+        HStack(spacing: 16) {
+            likeButton
+            commentsButton
+            rethreadButton
+            sendButton
+        }
+        .foregroundColor(Color.primary)
+        .padding(.vertical, 8)
+    }
+    
+    var likeButton: some View {
+        Button {
+            
+        } label: {
+            Image(systemName: "heart")
+        }
+    }
+    
+    var commentsButton: some View {
+        Button {
+            
+        } label: {
+            Image(systemName: "bubble.right")
+        }
+    }
+    
+    var rethreadButton: some View {
+        Button {
+            
+        } label: {
+            Image(systemName: "arrow.rectanglepath")
+        }
+    }
+    
+    var sendButton: some View {
+        Button {
+            
+        } label: {
+            Image(systemName: "paperplane")
+        }
+    }
+    
+    var optionsButton: some View {
+        Button {
+            
+        } label: {
+            Image(systemName: "ellipsis")
+                .foregroundColor(Color(.darkGray))
+        }
     }
 }
