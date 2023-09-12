@@ -11,6 +11,7 @@
 		E9E91B342AB06D9200E4A6E4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E91B332AB06D9200E4A6E4 /* ContentView.swift */; };
 		E9E91B362AB06D9300E4A6E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9E91B352AB06D9300E4A6E4 /* Assets.xcassets */; };
 		E9E91B392AB06D9300E4A6E4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9E91B382AB06D9300E4A6E4 /* Preview Assets.xcassets */; };
+		E9E91B492AB06FD400E4A6E4 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E91B482AB06FD400E4A6E4 /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		E9E91B332AB06D9200E4A6E4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E9E91B352AB06D9300E4A6E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E9E91B382AB06D9300E4A6E4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E9E91B482AB06FD400E4A6E4 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +53,12 @@
 		E9E91B302AB06D9200E4A6E4 /* Threads */ = {
 			isa = PBXGroup;
 			children = (
-				E9E91B312AB06D9200E4A6E4 /* ThreadsApp.swift */,
-				E9E91B332AB06D9200E4A6E4 /* ContentView.swift */,
-				E9E91B352AB06D9300E4A6E4 /* Assets.xcassets */,
+				E9E91B442AB06F4000E4A6E4 /* Extensions */,
+				E9E91B432AB06F3D00E4A6E4 /* Core */,
+				E9E91B422AB06F3200E4A6E4 /* Model */,
+				E9E91B412AB06F2700E4A6E4 /* Services */,
+				E9E91B402AB06F1A00E4A6E4 /* Utils */,
+				E9E91B3F2AB06F0E00E4A6E4 /* App */,
 				E9E91B372AB06D9300E4A6E4 /* Preview Content */,
 			);
 			path = Threads;
@@ -65,6 +70,76 @@
 				E9E91B382AB06D9300E4A6E4 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E9E91B3F2AB06F0E00E4A6E4 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				E9E91B352AB06D9300E4A6E4 /* Assets.xcassets */,
+				E9E91B312AB06D9200E4A6E4 /* ThreadsApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		E9E91B402AB06F1A00E4A6E4 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		E9E91B412AB06F2700E4A6E4 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		E9E91B422AB06F3200E4A6E4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E9E91B432AB06F3D00E4A6E4 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				E9E91B452AB06FA100E4A6E4 /* Authentication */,
+				E9E91B462AB06FA900E4A6E4 /* Root */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		E9E91B442AB06F4000E4A6E4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E9E91B452AB06FA100E4A6E4 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				E9E91B472AB06FC600E4A6E4 /* Views */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		E9E91B462AB06FA900E4A6E4 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				E9E91B332AB06D9200E4A6E4 /* ContentView.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		E9E91B472AB06FC600E4A6E4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E9E91B482AB06FD400E4A6E4 /* LoginView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +212,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9E91B492AB06FD400E4A6E4 /* LoginView.swift in Sources */,
 				E9E91B342AB06D9200E4A6E4 /* ContentView.swift in Sources */,
 				E9E91B322AB06D9200E4A6E4 /* ThreadsApp.swift in Sources */,
 			);
