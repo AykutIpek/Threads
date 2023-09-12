@@ -12,6 +12,9 @@
 		E9E91B362AB06D9300E4A6E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9E91B352AB06D9300E4A6E4 /* Assets.xcassets */; };
 		E9E91B392AB06D9300E4A6E4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9E91B382AB06D9300E4A6E4 /* Preview Assets.xcassets */; };
 		E9E91B492AB06FD400E4A6E4 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E91B482AB06FD400E4A6E4 /* LoginView.swift */; };
+		E9E91B4D2AB0774500E4A6E4 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E91B4C2AB0774500E4A6E4 /* LoginViewModel.swift */; };
+		E9E91B502AB0776200E4A6E4 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E91B4F2AB0776200E4A6E4 /* LoginModel.swift */; };
+		E9E91B532AB0801A00E4A6E4 /* AuthButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E91B522AB0801A00E4A6E4 /* AuthButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +24,10 @@
 		E9E91B352AB06D9300E4A6E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E9E91B382AB06D9300E4A6E4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E9E91B482AB06FD400E4A6E4 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		E9E91B4A2AB0742100E4A6E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		E9E91B4C2AB0774500E4A6E4 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		E9E91B4F2AB0776200E4A6E4 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		E9E91B522AB0801A00E4A6E4 /* AuthButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +60,7 @@
 		E9E91B302AB06D9200E4A6E4 /* Threads */ = {
 			isa = PBXGroup;
 			children = (
+				E9E91B4A2AB0742100E4A6E4 /* Info.plist */,
 				E9E91B442AB06F4000E4A6E4 /* Extensions */,
 				E9E91B432AB06F3D00E4A6E4 /* Core */,
 				E9E91B422AB06F3200E4A6E4 /* Model */,
@@ -84,6 +92,7 @@
 		E9E91B402AB06F1A00E4A6E4 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				E9E91B512AB07FF600E4A6E4 /* CustomComponents */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -121,7 +130,8 @@
 		E9E91B452AB06FA100E4A6E4 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
-				E9E91B472AB06FC600E4A6E4 /* Views */,
+				E9E91B562AB0891B00E4A6E4 /* Login */,
+				E9E91B572AB08C9000E4A6E4 /* Register */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -140,6 +150,71 @@
 				E9E91B482AB06FD400E4A6E4 /* LoginView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		E9E91B4B2AB0772B00E4A6E4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E9E91B4C2AB0774500E4A6E4 /* LoginViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E9E91B4E2AB0775700E4A6E4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E9E91B4F2AB0776200E4A6E4 /* LoginModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E9E91B512AB07FF600E4A6E4 /* CustomComponents */ = {
+			isa = PBXGroup;
+			children = (
+				E9E91B522AB0801A00E4A6E4 /* AuthButton.swift */,
+			);
+			path = CustomComponents;
+			sourceTree = "<group>";
+		};
+		E9E91B562AB0891B00E4A6E4 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				E9E91B4E2AB0775700E4A6E4 /* Model */,
+				E9E91B4B2AB0772B00E4A6E4 /* ViewModel */,
+				E9E91B472AB06FC600E4A6E4 /* Views */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		E9E91B572AB08C9000E4A6E4 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				E9E91B5A2AB08CA200E4A6E4 /* Model */,
+				E9E91B592AB08C9E00E4A6E4 /* View */,
+				E9E91B582AB08C9700E4A6E4 /* ViewModel */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		E9E91B582AB08C9700E4A6E4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E9E91B592AB08C9E00E4A6E4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E9E91B5A2AB08CA200E4A6E4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,7 +287,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9E91B502AB0776200E4A6E4 /* LoginModel.swift in Sources */,
+				E9E91B4D2AB0774500E4A6E4 /* LoginViewModel.swift in Sources */,
 				E9E91B492AB06FD400E4A6E4 /* LoginView.swift in Sources */,
+				E9E91B532AB0801A00E4A6E4 /* AuthButton.swift in Sources */,
 				E9E91B342AB06D9200E4A6E4 /* ContentView.swift in Sources */,
 				E9E91B322AB06D9200E4A6E4 /* ThreadsApp.swift in Sources */,
 			);
@@ -346,9 +424,9 @@
 				DEVELOPMENT_TEAM = 5Z6579228A;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Threads/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -375,9 +453,9 @@
 				DEVELOPMENT_TEAM = 5Z6579228A;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Threads/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
