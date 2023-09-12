@@ -15,6 +15,11 @@
 		E9E91B4D2AB0774500E4A6E4 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E91B4C2AB0774500E4A6E4 /* LoginViewModel.swift */; };
 		E9E91B502AB0776200E4A6E4 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E91B4F2AB0776200E4A6E4 /* LoginModel.swift */; };
 		E9E91B532AB0801A00E4A6E4 /* AuthButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E91B522AB0801A00E4A6E4 /* AuthButton.swift */; };
+		E9E91B5C2AB08CE800E4A6E4 /* RegisterationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E91B5B2AB08CE800E4A6E4 /* RegisterationView.swift */; };
+		E9E91B5E2AB08CF400E4A6E4 /* RegisterationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E91B5D2AB08CF400E4A6E4 /* RegisterationModel.swift */; };
+		E9E91B602AB08CFC00E4A6E4 /* RegisterationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E91B5F2AB08CFC00E4A6E4 /* RegisterationViewModel.swift */; };
+		E9E91B622AB08EDE00E4A6E4 /* TextFieldModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E91B612AB08EDE00E4A6E4 /* TextFieldModifier.swift */; };
+		E9E91B672AB0929C00E4A6E4 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E91B662AB0929C00E4A6E4 /* View.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +33,11 @@
 		E9E91B4C2AB0774500E4A6E4 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		E9E91B4F2AB0776200E4A6E4 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 		E9E91B522AB0801A00E4A6E4 /* AuthButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthButton.swift; sourceTree = "<group>"; };
+		E9E91B5B2AB08CE800E4A6E4 /* RegisterationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterationView.swift; sourceTree = "<group>"; };
+		E9E91B5D2AB08CF400E4A6E4 /* RegisterationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterationModel.swift; sourceTree = "<group>"; };
+		E9E91B5F2AB08CFC00E4A6E4 /* RegisterationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterationViewModel.swift; sourceTree = "<group>"; };
+		E9E91B612AB08EDE00E4A6E4 /* TextFieldModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldModifier.swift; sourceTree = "<group>"; };
+		E9E91B662AB0929C00E4A6E4 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +102,7 @@
 		E9E91B402AB06F1A00E4A6E4 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				E9E91B632AB08FE000E4A6E4 /* Modifiers */,
 				E9E91B512AB07FF600E4A6E4 /* CustomComponents */,
 			);
 			path = Utils;
@@ -123,6 +134,7 @@
 		E9E91B442AB06F4000E4A6E4 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				E9E91B662AB0929C00E4A6E4 /* View.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -144,12 +156,12 @@
 			path = Root;
 			sourceTree = "<group>";
 		};
-		E9E91B472AB06FC600E4A6E4 /* Views */ = {
+		E9E91B472AB06FC600E4A6E4 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				E9E91B482AB06FD400E4A6E4 /* LoginView.swift */,
 			);
-			path = Views;
+			path = View;
 			sourceTree = "<group>";
 		};
 		E9E91B4B2AB0772B00E4A6E4 /* ViewModel */ = {
@@ -181,7 +193,7 @@
 			children = (
 				E9E91B4E2AB0775700E4A6E4 /* Model */,
 				E9E91B4B2AB0772B00E4A6E4 /* ViewModel */,
-				E9E91B472AB06FC600E4A6E4 /* Views */,
+				E9E91B472AB06FC600E4A6E4 /* View */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -199,6 +211,7 @@
 		E9E91B582AB08C9700E4A6E4 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				E9E91B5F2AB08CFC00E4A6E4 /* RegisterationViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -206,6 +219,7 @@
 		E9E91B592AB08C9E00E4A6E4 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E9E91B5B2AB08CE800E4A6E4 /* RegisterationView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -213,8 +227,17 @@
 		E9E91B5A2AB08CA200E4A6E4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E9E91B5D2AB08CF400E4A6E4 /* RegisterationModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		E9E91B632AB08FE000E4A6E4 /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				E9E91B612AB08EDE00E4A6E4 /* TextFieldModifier.swift */,
+			);
+			path = Modifiers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -290,7 +313,12 @@
 				E9E91B502AB0776200E4A6E4 /* LoginModel.swift in Sources */,
 				E9E91B4D2AB0774500E4A6E4 /* LoginViewModel.swift in Sources */,
 				E9E91B492AB06FD400E4A6E4 /* LoginView.swift in Sources */,
+				E9E91B602AB08CFC00E4A6E4 /* RegisterationViewModel.swift in Sources */,
 				E9E91B532AB0801A00E4A6E4 /* AuthButton.swift in Sources */,
+				E9E91B5E2AB08CF400E4A6E4 /* RegisterationModel.swift in Sources */,
+				E9E91B622AB08EDE00E4A6E4 /* TextFieldModifier.swift in Sources */,
+				E9E91B672AB0929C00E4A6E4 /* View.swift in Sources */,
+				E9E91B5C2AB08CE800E4A6E4 /* RegisterationView.swift in Sources */,
 				E9E91B342AB06D9200E4A6E4 /* ContentView.swift in Sources */,
 				E9E91B322AB06D9200E4A6E4 /* ThreadsApp.swift in Sources */,
 			);

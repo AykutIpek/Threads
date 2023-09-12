@@ -18,20 +18,21 @@ struct LoginView: View {
         NavigationStack {
             VStack {
                 Spacer()
-                // App Icon
-                logo
-                // Text Field
+                // App Icon brought from general view extension
+                appIcon
+                // Form fields brought from login view extension
                 form
-                // Forgot Password Button
+                // Forgot Password Button brought Login View Extension
                 forgotPassword
-                // Authentication generic button
+                // Authentication generic button brought custom components
                 AuthButton(buttonText: "Login") {
                     
                 }
+                
                 Spacer()
                 
                 Divider()
-                // Go to register page
+                // Go to register page brought login view extension
                 createAccountButton
             }
         }
@@ -45,23 +46,12 @@ struct LoginView_Previews: PreviewProvider {
 }
 
 private extension LoginView {
-    var logo: some View {
-        Image("threadsIcon")
-            .resizable()
-            .frame(width: 150, height: 150)
-            .scaledToFill()
-            .padding()
-    }
     var form: some View {
         Group {
             email
             password
         }
-        .font(.subheadline)
-        .padding(12)
-        .background(Color(.systemGray6))
-        .cornerRadius(10)
-        .padding(.horizontal, 24)
+        .modifier(TextFieldModifier())
     }
     var email: some View {
         TextField("Enter your email", text: $vm.model.email)
