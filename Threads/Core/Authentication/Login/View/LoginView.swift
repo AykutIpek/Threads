@@ -74,14 +74,14 @@ private extension LoginView {
     }
     var createAccountButton: some View {
         NavigationLink {
-            
+            RegisterationView()
         } label: {
             HStack(spacing: 3.0) {
                 Text("Don't have an account")
                 Text("Sign Up")
                     .fontWeight(.semibold)
             }
-            .foregroundColor(.black)
+            .foregroundColor(Color.primary)
             .font(.footnote)
         }
         .padding(.vertical, 16)

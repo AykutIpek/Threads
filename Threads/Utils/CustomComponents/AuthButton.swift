@@ -9,6 +9,7 @@ import SwiftUI
 
 struct AuthButton: View {
     //MARK: - Properties
+    @Environment(\.colorScheme) var colorScheme
     let buttonText: String
     let action: () -> Void
     
@@ -22,7 +23,7 @@ struct AuthButton: View {
                 .fontWeight(.semibold)
                 .foregroundColor(.white)
                 .frame(width: 352, height: 44)
-                .background(.black)
+                .background(colorScheme == .dark ? Color.blue : Color.black)
                 .cornerRadius(8)
         }
     }

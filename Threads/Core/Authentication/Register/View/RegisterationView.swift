@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct RegisterationView: View {
+    //MARK: - Properties
     @StateObject private var vm: RegisterationViewModel
+    @Environment(\.dismiss) var dismiss
     
     init() {
         _vm = StateObject(wrappedValue: RegisterationViewModel())
@@ -22,8 +24,19 @@ struct RegisterationView: View {
                 // Form fields brought from login view extension
                 formGeneral
                 
+                AuthButton(buttonText: "Sign Up") {
+                    
+                }
+                .padding()
+                
+                
                 Spacer()
+                
+                Divider()
+                
+                goLoginButton
             }
+            .navigationBarBackButtonHidden()
         }
     }
 }
@@ -55,5 +68,20 @@ private extension RegisterationView {
     }
     var password: some View {
         SecureField("Enter your password", text: $vm.model.password)
+    }
+    
+    var goLoginButton: some View {
+        Button {
+            dismiss()
+        } label: {
+            HStack(spacing: 3.0) {
+                Text("Already for an account")
+                Text("Sign In")
+                    .fontWeight(.semibold)
+            }
+            .foregroundColor(Color.primary)
+            .font(.footnote)
+        }
+        .padding(.vertical, 16)
     }
 }
