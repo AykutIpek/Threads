@@ -12,6 +12,7 @@ import SwiftUI
 struct TextFieldModifier: ViewModifier {
     func body(content: Content) -> some View {
         content
+            .textInputAutocapitalization(.none)
             .font(.subheadline)
             .padding(12)
             .background(Color(.systemGray6))

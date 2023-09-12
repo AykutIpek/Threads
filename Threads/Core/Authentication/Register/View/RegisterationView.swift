@@ -36,7 +36,6 @@ struct RegisterationView: View {
                 
                 goLoginButton
             }
-            .navigationBarBackButtonHidden()
         }
     }
 }

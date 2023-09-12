@@ -20,6 +20,7 @@
 		E9E91B602AB08CFC00E4A6E4 /* RegisterationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E91B5F2AB08CFC00E4A6E4 /* RegisterationViewModel.swift */; };
 		E9E91B622AB08EDE00E4A6E4 /* TextFieldModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E91B612AB08EDE00E4A6E4 /* TextFieldModifier.swift */; };
 		E9E91B672AB0929C00E4A6E4 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E91B662AB0929C00E4A6E4 /* View.swift */; };
+		E9E91B6A2AB0A6F300E4A6E4 /* ThreadsTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E91B692AB0A6F300E4A6E4 /* ThreadsTabView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		E9E91B5F2AB08CFC00E4A6E4 /* RegisterationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterationViewModel.swift; sourceTree = "<group>"; };
 		E9E91B612AB08EDE00E4A6E4 /* TextFieldModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldModifier.swift; sourceTree = "<group>"; };
 		E9E91B662AB0929C00E4A6E4 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		E9E91B692AB0A6F300E4A6E4 /* ThreadsTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadsTabView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +127,7 @@
 		E9E91B432AB06F3D00E4A6E4 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				E9E91B682AB0A6C300E4A6E4 /* Tabbar */,
 				E9E91B452AB06FA100E4A6E4 /* Authentication */,
 				E9E91B462AB06FA900E4A6E4 /* Root */,
 			);
@@ -240,6 +243,14 @@
 			path = Modifiers;
 			sourceTree = "<group>";
 		};
+		E9E91B682AB0A6C300E4A6E4 /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				E9E91B692AB0A6F300E4A6E4 /* ThreadsTabView.swift */,
+			);
+			path = Tabbar;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -318,6 +329,7 @@
 				E9E91B5E2AB08CF400E4A6E4 /* RegisterationModel.swift in Sources */,
 				E9E91B622AB08EDE00E4A6E4 /* TextFieldModifier.swift in Sources */,
 				E9E91B672AB0929C00E4A6E4 /* View.swift in Sources */,
+				E9E91B6A2AB0A6F300E4A6E4 /* ThreadsTabView.swift in Sources */,
 				E9E91B5C2AB08CE800E4A6E4 /* RegisterationView.swift in Sources */,
 				E9E91B342AB06D9200E4A6E4 /* ContentView.swift in Sources */,
 				E9E91B322AB06D9200E4A6E4 /* ThreadsApp.swift in Sources */,
