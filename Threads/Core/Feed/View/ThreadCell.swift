@@ -11,7 +11,7 @@ struct ThreadCell: View {
     var body: some View {
         VStack {
             HStack(alignment: .top, spacing: 12) {
-                personImage
+                CircularProfileImageView()
                 VStack(alignment: .leading, spacing: 4) {
                     HStack {
                         
@@ -42,13 +42,6 @@ struct ThreadCell_Previews: PreviewProvider {
 }
 
 private extension ThreadCell {
-    var personImage: some View {
-        Image("Max-Verstappen")
-            .resizable()
-            .scaledToFill()
-            .frame(width: 40, height: 40)
-            .clipShape(Circle())
-    }
     
     var userNameText: some View {
         Text("maxverstappen1")
