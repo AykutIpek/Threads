@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E9C400482AB1C53400786545 /* CircularProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C400472AB1C53400786545 /* CircularProfileImageView.swift */; };
+		E9C4004A2AB1C65900786545 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C400492AB1C65900786545 /* UserCell.swift */; };
+		E9C4004C2AB1D29200786545 /* ProfileTreadFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C4004B2AB1D29200786545 /* ProfileTreadFilter.swift */; };
+		E9C400502AB215E300786545 /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C4004F2AB215E300786545 /* EditProfileView.swift */; };
 		E9E91B322AB06D9200E4A6E4 /* ThreadsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E91B312AB06D9200E4A6E4 /* ThreadsApp.swift */; };
 		E9E91B342AB06D9200E4A6E4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E91B332AB06D9200E4A6E4 /* ContentView.swift */; };
 		E9E91B362AB06D9300E4A6E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9E91B352AB06D9300E4A6E4 /* Assets.xcassets */; };
@@ -26,9 +30,14 @@
 		E9E91B7C2AB0ACCE00E4A6E4 /* CreateThreadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E91B7B2AB0ACCE00E4A6E4 /* CreateThreadView.swift */; };
 		E9E91B822AB0AD2400E4A6E4 /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E91B812AB0AD2400E4A6E4 /* ActivityView.swift */; };
 		E9E91B882AB0AD7500E4A6E4 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E91B872AB0AD7500E4A6E4 /* ProfileView.swift */; };
+		E9E91B8A2AB0B20600E4A6E4 /* ThreadCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E91B892AB0B20600E4A6E4 /* ThreadCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E9C400472AB1C53400786545 /* CircularProfileImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProfileImageView.swift; sourceTree = "<group>"; };
+		E9C400492AB1C65900786545 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		E9C4004B2AB1D29200786545 /* ProfileTreadFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTreadFilter.swift; sourceTree = "<group>"; };
+		E9C4004F2AB215E300786545 /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
 		E9E91B2E2AB06D9200E4A6E4 /* Threads.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Threads.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9E91B312AB06D9200E4A6E4 /* ThreadsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadsApp.swift; sourceTree = "<group>"; };
 		E9E91B332AB06D9200E4A6E4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -50,6 +59,7 @@
 		E9E91B7B2AB0ACCE00E4A6E4 /* CreateThreadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateThreadView.swift; sourceTree = "<group>"; };
 		E9E91B812AB0AD2400E4A6E4 /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
 		E9E91B872AB0AD7500E4A6E4 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		E9E91B892AB0B20600E4A6E4 /* ThreadCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +73,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E9C4004D2AB2159600786545 /* EditProfile */ = {
+			isa = PBXGroup;
+			children = (
+				E9C4004E2AB215DB00786545 /* View */,
+			);
+			path = EditProfile;
+			sourceTree = "<group>";
+		};
+		E9C4004E2AB215DB00786545 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E9C4004F2AB215E300786545 /* EditProfileView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		E9E91B252AB06D9200E4A6E4 = {
 			isa = PBXGroup;
 			children = (
@@ -202,6 +228,8 @@
 			isa = PBXGroup;
 			children = (
 				E9E91B522AB0801A00E4A6E4 /* AuthButton.swift */,
+				E9C400472AB1C53400786545 /* CircularProfileImageView.swift */,
+				E9C400492AB1C65900786545 /* UserCell.swift */,
 			);
 			path = CustomComponents;
 			sourceTree = "<group>";
@@ -287,6 +315,7 @@
 			isa = PBXGroup;
 			children = (
 				E9E91B6F2AB0AB8700E4A6E4 /* FeedView.swift */,
+				E9E91B892AB0B20600E4A6E4 /* ThreadCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -397,6 +426,7 @@
 		E9E91B832AB0AD3600E4A6E4 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				E9C4004D2AB2159600786545 /* EditProfile */,
 				E9E91B862AB0AD4A00E4A6E4 /* Model */,
 				E9E91B852AB0AD4700E4A6E4 /* View */,
 				E9E91B842AB0AD4100E4A6E4 /* ViewModel */,
@@ -422,6 +452,7 @@
 		E9E91B862AB0AD4A00E4A6E4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E9C4004B2AB1D29200786545 /* ProfileTreadFilter.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -504,12 +535,17 @@
 				E9E91B822AB0AD2400E4A6E4 /* ActivityView.swift in Sources */,
 				E9E91B602AB08CFC00E4A6E4 /* RegisterationViewModel.swift in Sources */,
 				E9E91B532AB0801A00E4A6E4 /* AuthButton.swift in Sources */,
+				E9C4004A2AB1C65900786545 /* UserCell.swift in Sources */,
 				E9E91B5E2AB08CF400E4A6E4 /* RegisterationModel.swift in Sources */,
+				E9C4004C2AB1D29200786545 /* ProfileTreadFilter.swift in Sources */,
+				E9E91B8A2AB0B20600E4A6E4 /* ThreadCell.swift in Sources */,
 				E9E91B882AB0AD7500E4A6E4 /* ProfileView.swift in Sources */,
 				E9E91B622AB08EDE00E4A6E4 /* TextFieldModifier.swift in Sources */,
+				E9C400502AB215E300786545 /* EditProfileView.swift in Sources */,
 				E9E91B672AB0929C00E4A6E4 /* View.swift in Sources */,
 				E9E91B6A2AB0A6F300E4A6E4 /* ThreadsTabView.swift in Sources */,
 				E9E91B5C2AB08CE800E4A6E4 /* RegisterationView.swift in Sources */,
+				E9C400482AB1C53400786545 /* CircularProfileImageView.swift in Sources */,
 				E9E91B702AB0AB8700E4A6E4 /* FeedView.swift in Sources */,
 				E9E91B342AB06D9200E4A6E4 /* ContentView.swift in Sources */,
 				E9E91B322AB06D9200E4A6E4 /* ThreadsApp.swift in Sources */,
