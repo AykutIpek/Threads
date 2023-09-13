@@ -25,7 +25,7 @@ struct RegisterationView: View {
                 formGeneral
                 
                 AuthButton(buttonText: "Sign Up") {
-                    
+                    Task { try await vm.createUser() }
                 }
                 .padding()
                 

@@ -16,6 +16,7 @@
 		E9C400572AB238E700786545 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = E9C400562AB238E700786545 /* FirebaseFirestore */; };
 		E9C400592AB238E700786545 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E9C400582AB238E700786545 /* FirebaseFirestoreSwift */; };
 		E9C4005B2AB238E700786545 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = E9C4005A2AB238E700786545 /* FirebaseStorage */; };
+		E9C4005E2AB23CEA00786545 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C4005D2AB23CEA00786545 /* AuthService.swift */; };
 		E9E91B322AB06D9200E4A6E4 /* ThreadsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E91B312AB06D9200E4A6E4 /* ThreadsApp.swift */; };
 		E9E91B342AB06D9200E4A6E4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E91B332AB06D9200E4A6E4 /* ContentView.swift */; };
 		E9E91B362AB06D9300E4A6E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9E91B352AB06D9300E4A6E4 /* Assets.xcassets */; };
@@ -44,6 +45,7 @@
 		E9C4004B2AB1D29200786545 /* ProfileTreadFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTreadFilter.swift; sourceTree = "<group>"; };
 		E9C4004F2AB215E300786545 /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
 		E9C400512AB237D900786545 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E9C4005D2AB23CEA00786545 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		E9E91B2E2AB06D9200E4A6E4 /* Threads.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Threads.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9E91B312AB06D9200E4A6E4 /* ThreadsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadsApp.swift; sourceTree = "<group>"; };
 		E9E91B332AB06D9200E4A6E4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -97,6 +99,14 @@
 				E9C4004F2AB215E300786545 /* EditProfileView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		E9C4005C2AB23CE200786545 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				E9C4005D2AB23CEA00786545 /* AuthService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 		E9E91B252AB06D9200E4A6E4 = {
@@ -197,6 +207,7 @@
 		E9E91B452AB06FA100E4A6E4 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
+				E9C4005C2AB23CE200786545 /* Service */,
 				E9E91B562AB0891B00E4A6E4 /* Login */,
 				E9E91B572AB08C9000E4A6E4 /* Register */,
 			);
@@ -549,6 +560,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9E91B7C2AB0ACCE00E4A6E4 /* CreateThreadView.swift in Sources */,
+				E9C4005E2AB23CEA00786545 /* AuthService.swift in Sources */,
 				E9E91B762AB0AC5200E4A6E4 /* ExploreView.swift in Sources */,
 				E9E91B502AB0776200E4A6E4 /* LoginModel.swift in Sources */,
 				E9E91B4D2AB0774500E4A6E4 /* LoginViewModel.swift in Sources */,
