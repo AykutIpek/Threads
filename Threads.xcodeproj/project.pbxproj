@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E93871722AB465F800E0FDB2 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93871712AB465F800E0FDB2 /* ContentViewModel.swift */; };
+		E93871742AB4727E00E0FDB2 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93871732AB4727E00E0FDB2 /* User.swift */; };
 		E9C400482AB1C53400786545 /* CircularProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C400472AB1C53400786545 /* CircularProfileImageView.swift */; };
 		E9C4004A2AB1C65900786545 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C400492AB1C65900786545 /* UserCell.swift */; };
 		E9C4004C2AB1D29200786545 /* ProfileTreadFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C4004B2AB1D29200786545 /* ProfileTreadFilter.swift */; };
@@ -42,6 +43,7 @@
 
 /* Begin PBXFileReference section */
 		E93871712AB465F800E0FDB2 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		E93871732AB4727E00E0FDB2 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		E9C400472AB1C53400786545 /* CircularProfileImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProfileImageView.swift; sourceTree = "<group>"; };
 		E9C400492AB1C65900786545 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		E9C4004B2AB1D29200786545 /* ProfileTreadFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTreadFilter.swift; sourceTree = "<group>"; };
@@ -195,6 +197,7 @@
 		E9E91B422AB06F3200E4A6E4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E93871732AB4727E00E0FDB2 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -581,6 +584,7 @@
 				E9E91B7C2AB0ACCE00E4A6E4 /* CreateThreadView.swift in Sources */,
 				E9C4005E2AB23CEA00786545 /* AuthService.swift in Sources */,
 				E9E91B762AB0AC5200E4A6E4 /* ExploreView.swift in Sources */,
+				E93871742AB4727E00E0FDB2 /* User.swift in Sources */,
 				E9E91B502AB0776200E4A6E4 /* LoginModel.swift in Sources */,
 				E9E91B4D2AB0774500E4A6E4 /* LoginViewModel.swift in Sources */,
 				E9E91B492AB06FD400E4A6E4 /* LoginView.swift in Sources */,
