@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		E93871722AB465F800E0FDB2 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93871712AB465F800E0FDB2 /* ContentViewModel.swift */; };
 		E93871742AB4727E00E0FDB2 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93871732AB4727E00E0FDB2 /* User.swift */; };
+		E93871762AB4782800E0FDB2 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93871752AB4782800E0FDB2 /* UserService.swift */; };
+		E93871782AB479F000E0FDB2 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93871772AB479F000E0FDB2 /* ProfileViewModel.swift */; };
 		E9C400482AB1C53400786545 /* CircularProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C400472AB1C53400786545 /* CircularProfileImageView.swift */; };
 		E9C4004A2AB1C65900786545 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C400492AB1C65900786545 /* UserCell.swift */; };
 		E9C4004C2AB1D29200786545 /* ProfileTreadFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C4004B2AB1D29200786545 /* ProfileTreadFilter.swift */; };
@@ -44,6 +46,8 @@
 /* Begin PBXFileReference section */
 		E93871712AB465F800E0FDB2 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		E93871732AB4727E00E0FDB2 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		E93871752AB4782800E0FDB2 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		E93871772AB479F000E0FDB2 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		E9C400472AB1C53400786545 /* CircularProfileImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProfileImageView.swift; sourceTree = "<group>"; };
 		E9C400492AB1C65900786545 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		E9C4004B2AB1D29200786545 /* ProfileTreadFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTreadFilter.swift; sourceTree = "<group>"; };
@@ -190,6 +194,7 @@
 		E9E91B412AB06F2700E4A6E4 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				E93871752AB4782800E0FDB2 /* UserService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -481,6 +486,7 @@
 		E9E91B842AB0AD4100E4A6E4 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				E93871772AB479F000E0FDB2 /* ProfileViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -584,9 +590,11 @@
 				E9E91B7C2AB0ACCE00E4A6E4 /* CreateThreadView.swift in Sources */,
 				E9C4005E2AB23CEA00786545 /* AuthService.swift in Sources */,
 				E9E91B762AB0AC5200E4A6E4 /* ExploreView.swift in Sources */,
+				E93871782AB479F000E0FDB2 /* ProfileViewModel.swift in Sources */,
 				E93871742AB4727E00E0FDB2 /* User.swift in Sources */,
 				E9E91B502AB0776200E4A6E4 /* LoginModel.swift in Sources */,
 				E9E91B4D2AB0774500E4A6E4 /* LoginViewModel.swift in Sources */,
+				E93871762AB4782800E0FDB2 /* UserService.swift in Sources */,
 				E9E91B492AB06FD400E4A6E4 /* LoginView.swift in Sources */,
 				E9E91B822AB0AD2400E4A6E4 /* ActivityView.swift in Sources */,
 				E9E91B602AB08CFC00E4A6E4 /* RegisterationViewModel.swift in Sources */,
