@@ -26,7 +26,9 @@ struct LoginView: View {
                 forgotPassword
                 // Authentication generic button brought custom components
                 AuthButton(buttonText: "Login") {
-                    
+                    Task {
+                        try await vm.login()
+                    }
                 }
                 
                 Spacer()

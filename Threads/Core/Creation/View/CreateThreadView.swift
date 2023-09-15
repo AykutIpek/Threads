@@ -51,7 +51,7 @@ struct CreateThreadView: View {
                         dismiss()
                     }
                     .font(.subheadline)
-                    .foregroundColor(.black)
+                    .foregroundColor(.primary)
                 }
                 
                 ToolbarItem(placement: .navigationBarTrailing) {
@@ -62,7 +62,7 @@ struct CreateThreadView: View {
                     .disabled(caption.isEmpty)
                     .font(.subheadline)
                     .fontWeight(.semibold)
-                    .foregroundColor(.black)
+                    .foregroundColor(.primary)
                 }
             }
         }

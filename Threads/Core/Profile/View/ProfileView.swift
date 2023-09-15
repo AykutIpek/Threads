@@ -18,62 +18,75 @@ struct ProfileView: View {
     
     //MARK: - Body
     var body: some View {
-        ScrollView(showsIndicators: false) {
-            VStack(spacing: 20) {
-                HStack(alignment: .top) {
-                    VStack(alignment: .leading, spacing: 12) {
-                        
-                        headerTexts
-                        
-                        captionText
-                        
-                        followerTexts
-                    }
-                    
-                    Spacer()
-                    
-                    CircularProfileImageView()
-                }
-            }
-            
-            followButton
-            
-            //MARK: - User content List view
-            VStack {
-                HStack {
-                    ForEach(ProfileThreadFilter.allCases) { filter in
-                        VStack {
-                            Text(filter.title)
-                                .font(.subheadline)
-                                .fontWeight(selectedFilter == filter ? .semibold : .regular)
+        NavigationStack {
+            ScrollView(showsIndicators: false) {
+                VStack(spacing: 20) {
+                    HStack(alignment: .top) {
+                        VStack(alignment: .leading, spacing: 12) {
                             
-                            if selectedFilter == filter {
-                                Rectangle()
-                                    .foregroundColor(.primary)
-                                    .frame(width: filterBarWidth, height: 1)
-                                    .matchedGeometryEffect(id: "item", in: animation)
-                            } else {
-                                Rectangle()
-                                    .foregroundColor(.clear)
-                                    .frame(width: filterBarWidth, height: 1)
+                            headerTexts
+                            
+                            captionText
+                            
+                            followerTexts
+                        }
+                        
+                        Spacer()
+                        
+                        CircularProfileImageView()
+                    }
+                }
+                
+                followButton
+                
+                //MARK: - User content List view
+                VStack {
+                    HStack {
+                        ForEach(ProfileThreadFilter.allCases) { filter in
+                            VStack {
+                                Text(filter.title)
+                                    .font(.subheadline)
+                                    .fontWeight(selectedFilter == filter ? .semibold : .regular)
+                                
+                                if selectedFilter == filter {
+                                    Rectangle()
+                                        .foregroundColor(.primary)
+                                        .frame(width: filterBarWidth, height: 1)
+                                        .matchedGeometryEffect(id: "item", in: animation)
+                                } else {
+                                    Rectangle()
+                                        .foregroundColor(.clear)
+                                        .frame(width: filterBarWidth, height: 1)
+                                }
+                            }
+                            .onTapGesture {
+                                withAnimation(.spring()) {
+                                    selectedFilter = filter
+                                }
                             }
                         }
-                        .onTapGesture {
-                            withAnimation(.spring()) {
-                                selectedFilter = filter
-                            }
+                    }
+                    LazyVStack {
+                        ForEach(0 ... 10, id: \.self) { thread in
+                            ThreadCell()
                         }
                     }
                 }
-                LazyVStack {
-                    ForEach(0 ... 10, id: \.self) { thread in
-                        ThreadCell()
+                .padding(.vertical, 8)
+            }
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button {
+                        AuthService.shared.signOut()
+                    } label: {
+                        Image(systemName: "line.3.horizontal")
+                            .foregroundColor(.primary)
                     }
+
                 }
             }
-            .padding(.vertical, 8)
+            .padding(.horizontal)
         }
-        .padding(.horizontal)
     }
 }
 
