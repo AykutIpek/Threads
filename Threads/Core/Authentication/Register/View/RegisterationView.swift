@@ -55,6 +55,7 @@ private extension RegisterationView {
             password
         }
         .modifier(TextFieldModifier())
+        .textInputAutocapitalization(.none)
     }
     var email: some View {
         TextField("Enter your email", text: $vm.model.email)

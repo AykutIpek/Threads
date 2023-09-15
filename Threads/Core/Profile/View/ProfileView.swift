@@ -9,11 +9,16 @@ import SwiftUI
 
 struct ProfileView: View {
     //MARK: - Properties
+    @StateObject private var vm: ProfileViewModel
     @State private var selectedFilter: ProfileThreadFilter = .threads
     @Namespace var animation
     private var filterBarWidth: CGFloat {
         let count = CGFloat(ProfileThreadFilter.allCases.count)
         return UIScreen.main.bounds.width / count - 16
+    }
+    
+    init() {
+        _vm = StateObject(wrappedValue: ProfileViewModel())
     }
     
     //MARK: - Body
