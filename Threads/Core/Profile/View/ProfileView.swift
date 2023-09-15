@@ -17,6 +17,10 @@ struct ProfileView: View {
         return UIScreen.main.bounds.width / count - 16
     }
     
+    private var currentUser: User? {
+        return vm.currentUser
+    }
+    
     init() {
         _vm = StateObject(wrappedValue: ProfileViewModel())
     }
@@ -122,18 +126,21 @@ private extension ProfileView {
 private extension ProfileView {
     var headerTexts: some View {
         VStack(alignment: .leading, spacing: 4) {
-            Text("Charles Lecrech")
+            Text(currentUser?.fullname ?? "")
                 .font(.title2)
                 .fontWeight(.semibold)
             
-            Text("Charles_lecrech")
+            Text(currentUser?.username ?? "")
                 .font(.subheadline)
         }
     }
     
+    @ViewBuilder
     var captionText: some View {
-        Text("Formula 1 driver for Scuderia Ferrari")
-            .font(.footnote)
+        if let bio = currentUser?.bio {
+            Text(bio)
+                .font(.footnote)
+        }
     }
     
     var followerTexts: some View {
