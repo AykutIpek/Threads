@@ -11,6 +11,8 @@
 		E93871742AB4727E00E0FDB2 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93871732AB4727E00E0FDB2 /* User.swift */; };
 		E93871762AB4782800E0FDB2 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93871752AB4782800E0FDB2 /* UserService.swift */; };
 		E93871782AB479F000E0FDB2 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93871772AB479F000E0FDB2 /* ProfileViewModel.swift */; };
+		E938717A2AB48B0C00E0FDB2 /* ExploreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93871792AB48B0C00E0FDB2 /* ExploreViewModel.swift */; };
+		E938717C2AB48D2600E0FDB2 /* PreviewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E938717B2AB48D2600E0FDB2 /* PreviewProvider.swift */; };
 		E9C400482AB1C53400786545 /* CircularProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C400472AB1C53400786545 /* CircularProfileImageView.swift */; };
 		E9C4004A2AB1C65900786545 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C400492AB1C65900786545 /* UserCell.swift */; };
 		E9C4004C2AB1D29200786545 /* ProfileTreadFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C4004B2AB1D29200786545 /* ProfileTreadFilter.swift */; };
@@ -48,6 +50,8 @@
 		E93871732AB4727E00E0FDB2 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		E93871752AB4782800E0FDB2 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		E93871772AB479F000E0FDB2 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		E93871792AB48B0C00E0FDB2 /* ExploreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewModel.swift; sourceTree = "<group>"; };
+		E938717B2AB48D2600E0FDB2 /* PreviewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewProvider.swift; sourceTree = "<group>"; };
 		E9C400472AB1C53400786545 /* CircularProfileImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProfileImageView.swift; sourceTree = "<group>"; };
 		E9C400492AB1C65900786545 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		E9C4004B2AB1D29200786545 /* ProfileTreadFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTreadFilter.swift; sourceTree = "<group>"; };
@@ -226,6 +230,7 @@
 			isa = PBXGroup;
 			children = (
 				E9E91B662AB0929C00E4A6E4 /* View.swift */,
+				E938717B2AB48D2600E0FDB2 /* PreviewProvider.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -389,6 +394,7 @@
 		E9E91B722AB0AC1600E4A6E4 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				E93871792AB48B0C00E0FDB2 /* ExploreViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -600,6 +606,7 @@
 				E9E91B602AB08CFC00E4A6E4 /* RegisterationViewModel.swift in Sources */,
 				E93871722AB465F800E0FDB2 /* ContentViewModel.swift in Sources */,
 				E9E91B532AB0801A00E4A6E4 /* AuthButton.swift in Sources */,
+				E938717C2AB48D2600E0FDB2 /* PreviewProvider.swift in Sources */,
 				E9C4004A2AB1C65900786545 /* UserCell.swift in Sources */,
 				E9E91B5E2AB08CF400E4A6E4 /* RegisterationModel.swift in Sources */,
 				E9C4004C2AB1D29200786545 /* ProfileTreadFilter.swift in Sources */,
@@ -607,6 +614,7 @@
 				E9E91B882AB0AD7500E4A6E4 /* ProfileView.swift in Sources */,
 				E9E91B622AB08EDE00E4A6E4 /* TextFieldModifier.swift in Sources */,
 				E9C400502AB215E300786545 /* EditProfileView.swift in Sources */,
+				E938717A2AB48B0C00E0FDB2 /* ExploreViewModel.swift in Sources */,
 				E9E91B672AB0929C00E4A6E4 /* View.swift in Sources */,
 				E9E91B6A2AB0A6F300E4A6E4 /* ThreadsTabView.swift in Sources */,
 				E9E91B5C2AB08CE800E4A6E4 /* RegisterationView.swift in Sources */,
