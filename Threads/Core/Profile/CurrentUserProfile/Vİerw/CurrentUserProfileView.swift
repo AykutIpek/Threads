@@ -1,15 +1,18 @@
 //
-//  ProfileView.swift
+//  CurrentUserProfileView.swift
 //  Threads
 //
-//  Created by aykut ipek on 12.09.2023.
+//  Created by aykut ipek on 18.09.2023.
 //
 
 import SwiftUI
 
-struct ProfileView: View {
-    //MARK: - Properties
-    let user: User
+struct CurrentUserProfileView: View {
+    @StateObject private var vm: CurrentUserProfileViewModel
+    
+    init() {
+        _vm = StateObject(wrappedValue: CurrentUserProfileViewModel())
+    }
     @State private var selectedFilter: ProfileThreadFilter = .threads
     @Namespace var animation
     private var filterBarWidth: CGFloat {
@@ -17,9 +20,12 @@ struct ProfileView: View {
         return UIScreen.main.bounds.width / count - 16
     }
     
+    private var currentUser: User? {
+        return vm.currentUser
+    }
     
-    //MARK: - Body
     var body: some View {
+        NavigationStack {
             ScrollView(showsIndicators: false) {
                 VStack(spacing: 20) {
                     HStack(alignment: .top) {
@@ -87,18 +93,18 @@ struct ProfileView: View {
                 }
             }
             .padding(.horizontal)
-        
+        }
     }
 }
 
-struct ProfileView_Previews: PreviewProvider {
+struct CurrentUserProfileView_Previews: PreviewProvider {
     static var previews: some View {
-        ProfileView(user: dev.user)
+        CurrentUserProfileView()
     }
 }
 
 //MARK: - Buttons
-private extension ProfileView {
+private extension CurrentUserProfileView {
     var followButton: some View {
         Button {
             
@@ -115,21 +121,21 @@ private extension ProfileView {
 }
 
 //MARK: - Texts
-private extension ProfileView {
+private extension CurrentUserProfileView {
     var headerTexts: some View {
         VStack(alignment: .leading, spacing: 4) {
-            Text(user.fullname)
+            Text(currentUser?.fullname ?? "")
                 .font(.title2)
                 .fontWeight(.semibold)
             
-            Text(user.username)
+            Text(currentUser?.username ?? "")
                 .font(.subheadline)
         }
     }
     
     @ViewBuilder
     var captionText: some View {
-        if let bio = user.bio {
+        if let bio = currentUser?.bio {
             Text(bio)
                 .font(.footnote)
         }
