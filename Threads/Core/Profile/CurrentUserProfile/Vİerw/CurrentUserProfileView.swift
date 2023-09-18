@@ -9,13 +9,13 @@ import SwiftUI
 
 struct CurrentUserProfileView: View {
     @StateObject private var vm: CurrentUserProfileViewModel
+    @State private var showEditProfile = false
+    private var currentUser: User? {
+        return vm.currentUser
+    }
     
     init() {
         _vm = StateObject(wrappedValue: CurrentUserProfileViewModel())
-    }
-    
-    private var currentUser: User? {
-        return vm.currentUser
     }
     
     var body: some View {
@@ -30,6 +30,9 @@ struct CurrentUserProfileView: View {
                 //MARK: - User content List view
                 UserContentListView()
             }
+            .sheet(isPresented: $showEditProfile, content: {
+                EditProfileView()
+            })
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button {
@@ -56,9 +59,9 @@ struct CurrentUserProfileView_Previews: PreviewProvider {
 private extension CurrentUserProfileView {
     var editProfileButton: some View {
         Button {
-            
+            showEditProfile.toggle()
         } label: {
-            Text("Edit profile")
+            Text("Edit Profile")
                 .font(.subheadline)
                 .fontWeight(.semibold)
                 .foregroundColor(.black)
