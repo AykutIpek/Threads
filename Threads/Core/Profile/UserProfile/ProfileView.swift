@@ -1,31 +1,25 @@
 //
-//  CurrentUserProfileView.swift
+//  ProfileView.swift
 //  Threads
 //
-//  Created by aykut ipek on 18.09.2023.
+//  Created by aykut ipek on 12.09.2023.
 //
 
 import SwiftUI
 
-struct CurrentUserProfileView: View {
-    @StateObject private var vm: CurrentUserProfileViewModel
+struct ProfileView: View {
+    //MARK: - Properties
+    let user: User
+
     
-    init() {
-        _vm = StateObject(wrappedValue: CurrentUserProfileViewModel())
-    }
-    
-    private var currentUser: User? {
-        return vm.currentUser
-    }
-    
+    //MARK: - Body
     var body: some View {
-        NavigationStack {
             ScrollView(showsIndicators: false) {
                 VStack(spacing: 20) {
-                    ProfileHeaderView(user: currentUser)
+                    ProfileHeaderView(user: user)
                 }
                 
-                editProfileButton
+                followButton
                 
                 //MARK: - User content List view
                 UserContentListView()
@@ -41,34 +35,31 @@ struct CurrentUserProfileView: View {
 
                 }
             }
+            .navigationBarTitleDisplayMode(.inline)
             .padding(.horizontal)
-        }
+        
     }
 }
 
-struct CurrentUserProfileView_Previews: PreviewProvider {
+struct ProfileView_Previews: PreviewProvider {
     static var previews: some View {
-        CurrentUserProfileView()
+        ProfileView(user: dev.user)
     }
 }
 
 //MARK: - Buttons
-private extension CurrentUserProfileView {
-    var editProfileButton: some View {
+private extension ProfileView {
+    var followButton: some View {
         Button {
             
         } label: {
-            Text("Edit profile")
+            Text("Follow")
                 .font(.subheadline)
                 .fontWeight(.semibold)
-                .foregroundColor(.black)
+                .foregroundColor(.white)
                 .frame(width: 352, height: 32)
-                .background(.white)
+                .background(.black)
                 .cornerRadius(8)
-                .overlay {
-                    RoundedRectangle(cornerRadius: 8)
-                        .stroke(Color(.systemGray4), lineWidth: 1)
-                }
         }
     }
 }

@@ -14,6 +14,8 @@
 		E938717A2AB48B0C00E0FDB2 /* ExploreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93871792AB48B0C00E0FDB2 /* ExploreViewModel.swift */; };
 		E938717C2AB48D2600E0FDB2 /* PreviewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E938717B2AB48D2600E0FDB2 /* PreviewProvider.swift */; };
 		E9BD74C42AB84898003A9166 /* CurrentUserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BD74C32AB84898003A9166 /* CurrentUserProfileView.swift */; };
+		E9BD74CA2AB84E69003A9166 /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BD74C92AB84E69003A9166 /* ProfileHeaderView.swift */; };
+		E9BD74CC2AB8536D003A9166 /* UserContentListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BD74CB2AB8536D003A9166 /* UserContentListView.swift */; };
 		E9C400482AB1C53400786545 /* CircularProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C400472AB1C53400786545 /* CircularProfileImageView.swift */; };
 		E9C4004A2AB1C65900786545 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C400492AB1C65900786545 /* UserCell.swift */; };
 		E9C4004C2AB1D29200786545 /* ProfileTreadFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C4004B2AB1D29200786545 /* ProfileTreadFilter.swift */; };
@@ -54,6 +56,8 @@
 		E93871792AB48B0C00E0FDB2 /* ExploreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewModel.swift; sourceTree = "<group>"; };
 		E938717B2AB48D2600E0FDB2 /* PreviewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewProvider.swift; sourceTree = "<group>"; };
 		E9BD74C32AB84898003A9166 /* CurrentUserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentUserProfileView.swift; sourceTree = "<group>"; };
+		E9BD74C92AB84E69003A9166 /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
+		E9BD74CB2AB8536D003A9166 /* UserContentListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserContentListView.swift; sourceTree = "<group>"; };
 		E9C400472AB1C53400786545 /* CircularProfileImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProfileImageView.swift; sourceTree = "<group>"; };
 		E9C400492AB1C65900786545 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		E9C4004B2AB1D29200786545 /* ProfileTreadFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTreadFilter.swift; sourceTree = "<group>"; };
@@ -139,6 +143,15 @@
 				E93871772AB479F000E0FDB2 /* CurrentUserProfileViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E9BD74C82AB84E5E003A9166 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				E9BD74C92AB84E69003A9166 /* ProfileHeaderView.swift */,
+				E9BD74CB2AB8536D003A9166 /* UserContentListView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		E9C4004D2AB2159600786545 /* EditProfile */ = {
@@ -509,28 +522,21 @@
 		E9E91B832AB0AD3600E4A6E4 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				E9BD74C82AB84E5E003A9166 /* Components */,
 				E9BD74C12AB84866003A9166 /* CurrentUserProfile */,
 				E9C4004D2AB2159600786545 /* EditProfile */,
 				E9E91B862AB0AD4A00E4A6E4 /* Model */,
-				E9E91B852AB0AD4700E4A6E4 /* View */,
-				E9E91B842AB0AD4100E4A6E4 /* ViewModel */,
+				E9E91B852AB0AD4700E4A6E4 /* UserProfile */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
 		};
-		E9E91B842AB0AD4100E4A6E4 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		E9E91B852AB0AD4700E4A6E4 /* View */ = {
+		E9E91B852AB0AD4700E4A6E4 /* UserProfile */ = {
 			isa = PBXGroup;
 			children = (
 				E9E91B872AB0AD7500E4A6E4 /* ProfileView.swift */,
 			);
-			path = View;
+			path = UserProfile;
 			sourceTree = "<group>";
 		};
 		E9E91B862AB0AD4A00E4A6E4 /* Model */ = {
@@ -626,10 +632,12 @@
 				E9E91B762AB0AC5200E4A6E4 /* ExploreView.swift in Sources */,
 				E93871782AB479F000E0FDB2 /* CurrentUserProfileViewModel.swift in Sources */,
 				E93871742AB4727E00E0FDB2 /* User.swift in Sources */,
+				E9BD74CC2AB8536D003A9166 /* UserContentListView.swift in Sources */,
 				E9E91B502AB0776200E4A6E4 /* LoginModel.swift in Sources */,
 				E9E91B4D2AB0774500E4A6E4 /* LoginViewModel.swift in Sources */,
 				E93871762AB4782800E0FDB2 /* UserService.swift in Sources */,
 				E9E91B492AB06FD400E4A6E4 /* LoginView.swift in Sources */,
+				E9BD74CA2AB84E69003A9166 /* ProfileHeaderView.swift in Sources */,
 				E9E91B822AB0AD2400E4A6E4 /* ActivityView.swift in Sources */,
 				E9E91B602AB08CFC00E4A6E4 /* RegisterationViewModel.swift in Sources */,
 				E93871722AB465F800E0FDB2 /* ContentViewModel.swift in Sources */,
