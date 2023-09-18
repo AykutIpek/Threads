@@ -13,7 +13,11 @@ struct EditProfileView: View {
     @State private var bio = ""
     @State private var link = ""
     @Environment(\.dismiss) var dismiss
-    @EnvironmentObject var viewModel: CurrentUserProfileViewModel
+    @StateObject private var viewModel: EditProfileViewModel
+    
+    init() {
+        _viewModel = StateObject(wrappedValue: EditProfileViewModel())
+    }
 
     
     var body: some View {
@@ -92,9 +96,12 @@ struct EditProfileView: View {
                 .foregroundColor(.black)
             }
             
-            ToolbarItem(placement: .navigationBarTrailing) {
+            ToolbarItem(placement: .primaryAction) {
                 Button("Done") {
-                    
+                    Task {
+                        try await viewModel.updateUserData()
+                        dismiss()
+                    }
                 }
                 .font(.subheadline)
                 .fontWeight(.semibold)

@@ -16,6 +16,8 @@
 		E9BD74C42AB84898003A9166 /* CurrentUserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BD74C32AB84898003A9166 /* CurrentUserProfileView.swift */; };
 		E9BD74CA2AB84E69003A9166 /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BD74C92AB84E69003A9166 /* ProfileHeaderView.swift */; };
 		E9BD74CC2AB8536D003A9166 /* UserContentListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BD74CB2AB8536D003A9166 /* UserContentListView.swift */; };
+		E9BD74CF2AB872B2003A9166 /* EditProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BD74CE2AB872B2003A9166 /* EditProfileViewModel.swift */; };
+		E9BD74D12AB87A53003A9166 /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BD74D02AB87A53003A9166 /* ImageUploader.swift */; };
 		E9C400482AB1C53400786545 /* CircularProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C400472AB1C53400786545 /* CircularProfileImageView.swift */; };
 		E9C4004A2AB1C65900786545 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C400492AB1C65900786545 /* UserCell.swift */; };
 		E9C4004C2AB1D29200786545 /* ProfileTreadFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C4004B2AB1D29200786545 /* ProfileTreadFilter.swift */; };
@@ -58,6 +60,8 @@
 		E9BD74C32AB84898003A9166 /* CurrentUserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentUserProfileView.swift; sourceTree = "<group>"; };
 		E9BD74C92AB84E69003A9166 /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
 		E9BD74CB2AB8536D003A9166 /* UserContentListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserContentListView.swift; sourceTree = "<group>"; };
+		E9BD74CE2AB872B2003A9166 /* EditProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewModel.swift; sourceTree = "<group>"; };
+		E9BD74D02AB87A53003A9166 /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
 		E9C400472AB1C53400786545 /* CircularProfileImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProfileImageView.swift; sourceTree = "<group>"; };
 		E9C400492AB1C65900786545 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		E9C4004B2AB1D29200786545 /* ProfileTreadFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTreadFilter.swift; sourceTree = "<group>"; };
@@ -154,9 +158,18 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		E9BD74CD2AB87299003A9166 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E9BD74CE2AB872B2003A9166 /* EditProfileViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		E9C4004D2AB2159600786545 /* EditProfile */ = {
 			isa = PBXGroup;
 			children = (
+				E9BD74CD2AB87299003A9166 /* ViewModel */,
 				E9C4004E2AB215DB00786545 /* View */,
 			);
 			path = EditProfile;
@@ -240,6 +253,7 @@
 			isa = PBXGroup;
 			children = (
 				E93871752AB4782800E0FDB2 /* UserService.swift */,
+				E9BD74D02AB87A53003A9166 /* ImageUploader.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -627,6 +641,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9BD74CF2AB872B2003A9166 /* EditProfileViewModel.swift in Sources */,
 				E9E91B7C2AB0ACCE00E4A6E4 /* CreateThreadView.swift in Sources */,
 				E9C4005E2AB23CEA00786545 /* AuthService.swift in Sources */,
 				E9E91B762AB0AC5200E4A6E4 /* ExploreView.swift in Sources */,
@@ -645,6 +660,7 @@
 				E938717C2AB48D2600E0FDB2 /* PreviewProvider.swift in Sources */,
 				E9C4004A2AB1C65900786545 /* UserCell.swift in Sources */,
 				E9E91B5E2AB08CF400E4A6E4 /* RegisterationModel.swift in Sources */,
+				E9BD74D12AB87A53003A9166 /* ImageUploader.swift in Sources */,
 				E9C4004C2AB1D29200786545 /* ProfileTreadFilter.swift in Sources */,
 				E9BD74C42AB84898003A9166 /* CurrentUserProfileView.swift in Sources */,
 				E9E91B8A2AB0B20600E4A6E4 /* ThreadCell.swift in Sources */,
