@@ -28,7 +28,9 @@ struct CurrentUserProfileView: View {
                 editProfileButton
                 
                 //MARK: - User content List view
-                UserContentListView()
+                if let user = currentUser {
+                    UserContentListView(user: user)
+                }
             }
             .sheet(isPresented: $showEditProfile, content: {
                 NavigationStack {
