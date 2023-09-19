@@ -33,7 +33,7 @@ struct CurrentUserProfileView: View {
             .sheet(isPresented: $showEditProfile, content: {
                 NavigationStack {
                     if let user = currentUser {
-                        EditProfileView(user: user)
+                        EditProfileView()
                     }
                 }
             })
