@@ -32,8 +32,9 @@ struct CurrentUserProfileView: View {
             }
             .sheet(isPresented: $showEditProfile, content: {
                 NavigationStack {
-                    EditProfileView()
-                        .environmentObject(vm)
+                    if let user = currentUser {
+                        EditProfileView(user: user)
+                    }
                 }
             })
             .toolbar {
