@@ -14,7 +14,7 @@ struct ThreadCell: View {
     var body: some View {
         VStack {
             HStack(alignment: .top, spacing: 12) {
-                CircularProfileImageView(user: nil, size: .small)
+                CircularProfileImageView(user: thread.user, size: .small)
                 VStack(alignment: .leading, spacing: 4) {
                     HStack {
                         
@@ -47,7 +47,7 @@ struct ThreadCell_Previews: PreviewProvider {
 private extension ThreadCell {
     
     var userNameText: some View {
-        Text("maxverstappen1")
+        Text(thread.user?.username ?? "-")
             .font(.footnote)
             .fontWeight(.semibold)
     }
