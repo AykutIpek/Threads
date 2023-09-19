@@ -8,14 +8,22 @@
 import SwiftUI
 
 struct CreateThreadView: View {
-    @State private var caption: String = ""
+    private var user: User? {
+        return UserService.shared.currentUser
+    }
     @Environment(\.dismiss) var dismiss
+    @StateObject private var viewModel: CreateThreadViewModel
+    @State private var caption: String = ""
+    
+    init() {
+        _viewModel = StateObject(wrappedValue: CreateThreadViewModel())
+    }
     
     var body: some View {
         NavigationStack {
             VStack {
                 HStack(alignment: .top) {
-                    CircularProfileImageView(user: nil, size: .small)
+                    CircularProfileImageView(user: user, size: .small)
                     
                     VStack(alignment: .leading, spacing: 4.0) {
                         Text("maxverstappen1")
@@ -37,7 +45,6 @@ struct CreateThreadView: View {
                                 .foregroundColor(.gray)
                         }
                     }
-
                 }
                 Spacer()
             }
@@ -55,8 +62,11 @@ struct CreateThreadView: View {
                 }
                 
                 ToolbarItem(placement: .navigationBarTrailing) {
-                    Button("Done") {
-                        
+                    Button("Post") {
+                        Task {
+                            try await viewModel.uploadThread(caption: caption)
+                            dismiss()
+                        }
                     }
                     .opacity(caption.isEmpty ? 0.5 : 1.0)
                     .disabled(caption.isEmpty)
