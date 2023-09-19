@@ -22,7 +22,7 @@ struct ProfileView: View {
                 followButton
                 
                 //MARK: - User content List view
-                UserContentListView()
+                UserContentListView(user: user)
             }
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
