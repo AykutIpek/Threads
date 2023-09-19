@@ -31,8 +31,11 @@ struct CurrentUserProfileView: View {
                 UserContentListView()
             }
             .sheet(isPresented: $showEditProfile, content: {
-                EditProfileView()
-                    .environmentObject(vm)
+                NavigationStack {
+                    if let user = currentUser {
+                        EditProfileView()
+                    }
+                }
             })
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
@@ -42,7 +45,6 @@ struct CurrentUserProfileView: View {
                         Image(systemName: "line.3.horizontal")
                             .foregroundColor(.primary)
                     }
-
                 }
             }
             .padding(.horizontal)
