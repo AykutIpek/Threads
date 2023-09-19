@@ -17,6 +17,7 @@
 		E98AECAF2AB9D6E80022F3D8 /* Thread.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98AECAE2AB9D6E80022F3D8 /* Thread.swift */; };
 		E98AECB12AB9D81A0022F3D8 /* CreateThreadViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98AECB02AB9D8190022F3D8 /* CreateThreadViewModel.swift */; };
 		E98AECB32AB9D8330022F3D8 /* ThreadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98AECB22AB9D8330022F3D8 /* ThreadService.swift */; };
+		E98AECB52AB9E0F80022F3D8 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98AECB42AB9E0F80022F3D8 /* FeedViewModel.swift */; };
 		E9BD74C42AB84898003A9166 /* CurrentUserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BD74C32AB84898003A9166 /* CurrentUserProfileView.swift */; };
 		E9BD74CA2AB84E69003A9166 /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BD74C92AB84E69003A9166 /* ProfileHeaderView.swift */; };
 		E9BD74CC2AB8536D003A9166 /* UserContentListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BD74CB2AB8536D003A9166 /* UserContentListView.swift */; };
@@ -64,6 +65,7 @@
 		E98AECAE2AB9D6E80022F3D8 /* Thread.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thread.swift; sourceTree = "<group>"; };
 		E98AECB02AB9D8190022F3D8 /* CreateThreadViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateThreadViewModel.swift; sourceTree = "<group>"; };
 		E98AECB22AB9D8330022F3D8 /* ThreadService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadService.swift; sourceTree = "<group>"; };
+		E98AECB42AB9E0F80022F3D8 /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
 		E9BD74C32AB84898003A9166 /* CurrentUserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentUserProfileView.swift; sourceTree = "<group>"; };
 		E9BD74C92AB84E69003A9166 /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
 		E9BD74CB2AB8536D003A9166 /* UserContentListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserContentListView.swift; sourceTree = "<group>"; };
@@ -426,6 +428,7 @@
 		E9E91B6C2AB0AB7400E4A6E4 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				E98AECB42AB9E0F80022F3D8 /* FeedViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -654,6 +657,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E98AECB52AB9E0F80022F3D8 /* FeedViewModel.swift in Sources */,
 				E9BD74CF2AB872B2003A9166 /* EditProfileViewModel.swift in Sources */,
 				E9E91B7C2AB0ACCE00E4A6E4 /* CreateThreadView.swift in Sources */,
 				E9C4005E2AB23CEA00786545 /* AuthService.swift in Sources */,

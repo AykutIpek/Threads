@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct ThreadCell: View {
+    let thread: Thread
+    
+    
     var body: some View {
         VStack {
             HStack(alignment: .top, spacing: 12) {
@@ -37,7 +40,7 @@ struct ThreadCell: View {
 
 struct ThreadCell_Previews: PreviewProvider {
     static var previews: some View {
-        ThreadCell()
+        ThreadCell(thread: dev.thread)
     }
 }
 
@@ -56,7 +59,7 @@ private extension ThreadCell {
     }
     
     var bodyText: some View {
-        Text("Formula 1 Champion")
+        Text(thread.caption)
             .font(.footnote)
             .multilineTextAlignment(.leading)
     }
